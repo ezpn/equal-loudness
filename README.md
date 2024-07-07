@@ -30,3 +30,13 @@ Click **Import button**. Modal will load, click **Choose file** and pick the `JS
 
 ### Warning
 Baseline dB gain is set to -35 dB, so be careful with your audio volume!
+
+### Dependencies
+- [Skeleton framework](https://github.com/skeleton-framework/skeleton-framework)
+  - [MIT LICENSE](https://github.com/skeleton-framework/skeleton-framework/blob/master/LICENSE)
+- [Chart.js](https://github.com/chartjs/Chart.js)
+  - [MIT LICENSE](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
+- [Tone.js](https://github.com/Tonejs/Tone.js)
+  - [MIT LICENSE](https://github.com/Tonejs/Tone.js/blob/dev/LICENSE.md)
+- [Boxicons](https://github.com/atisawd/boxicons)
+  - [MIT LICENSE](https://github.com/atisawd/boxicons/blob/master/LICENSE)
