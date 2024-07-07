@@ -140,3 +140,13 @@ input[type='range']:disabled::-webkit-slider-thumb {
   text-decoration: none;
   cursor: pointer;
 }
+
+#chart-container {
+  min-height: 300px;
+}
+
+@media (min-width: 400px) {
+  #chart-container {
+    min-height: 400px;
+  }
+}
