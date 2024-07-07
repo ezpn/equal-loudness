@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Equal loudness</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <h3>Loudness Equalizer</h3>
+    </div>
+    <div class="row">
+      <p>Purpose of this tool is to observe how you perceive loudness of each frequency. Select one of the frequencies you'd like to listen to on frequency tiles. Click <i class="bx bx-play-circle bx-sm"></i> button below 1000 Hz frequency and listen to its loudness. Select <i class="bx bx-play-circle bx-sm"></i> below your chosen frequency and adjust Db Gain so that it matches loudness of 1000 Hz sound. Do that for each frequency. Baseline db gain is set to -35 dB, so be careful with your audio volume!</p>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        <p class="tooltip">
+          <a href="#">
+            <i class="bx bxs-keyboard"></i> Keyboard shortcuts
+            <span class="tooltip-text">
+              Q - Previous frequency <br/>
+              E - Next frequency <br />
+              A - Play 1000 Hz sound <br />
+              S - Mute / unmute <br />
+              D - Play selected frequency <br />
+              Left - Decrease dB Gain <br />
+              Right - Increase dB Gain <br />
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="three columns">&nbsp;</div>
+      <div class="three columns">
+        <a id="export-button" href="#" onclick="app.actionExport(event)"><i class="bx bxs-cloud-download"></i> Export</a>
+        <a id="download-hidden"></a>
+      </div>
+      <div class="three columns">
+        <a id="import-button" href="#" onclick="app.actionImport(event)"><i class="bx bxs-cloud-upload"></i> Import</a>
+      </div>
+    </div>
+    <div class="row">
+      <canvas id="chart"></canvas>
+    </div>
+    <div class="row vertical-margin" id="frequencies">
+    </div>
+    <div class="row sound-controls vertical-margin">
+      <div id="comparator" class="four columns text-center">
+        <div class="header"></div>
+        <button class="sound-control" data-value="comparator">
+          <i class="bx bx-play-circle bx-sm"></i>
+        </button>
+      </div>
+      <div id="mute" class="four columns text-center">
+        <div class="header">Mute</div>
+        <button class="sound-control button-primary" data-value="mute">
+          <i class="bx bx-volume-mute bx-sm"></i>
+        </button>
+      </div>
+      <div id="comparand" class="four columns text-center">
+        <div class="header"></div>
+        <button class="sound-control" data-value="comparand">
+          <i class="bx bx-play-circle bx-sm"></i>
+        </button>
+      </div>
+      <div class="row">
+        <div class="sound-level">
+          <label for="dbGain">Db Gain <span></span></label>
+          <input id="dbGain" type="range" />
+        </div>
+      </div>
+  </div>
+  <div id="modal" class="modal"></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="http://unpkg.com/tone"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

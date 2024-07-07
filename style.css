@@ -1,0 +1,142 @@
+#frequencies .button {
+  font-size: xx-small;
+  width: 35px;
+  height: 50px;
+  padding: 0;
+  margin: 1px
+}
+
+.button-primary:disabled {
+  background-color: #5e8b9b;
+  border-color: #5e8b9b;
+  cursor: not-allowed;
+}
+
+.button-primary:disabled:hover {
+  background-color: #5e8b9b;
+  border-color: #5e8b9b;
+  cursor: not-allowed;
+}
+
+#dbGain {
+  width: 100%;
+}
+.vertical-margin {
+  margin: 25px 0 25px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sound-control {
+  width: 100%;
+}
+
+input[type='range'] {
+  overflow: hidden;
+  -webkit-appearance: none;
+  background-color: #d4e8ee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #33C3F0;
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  margin-top: 1px;
+  width: 9px;
+  -webkit-appearance: none;
+  height: 9px;
+  border-radius: 100%;
+  background: #33C3F0;
+  box-shadow: -200px 0 0 195px #43e5f7;
+}
+
+input[type='range']:disabled {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+input[type='range']:disabled::-webkit-slider-runnable-track {
+  background-color: #eeeeee;
+}
+
+input[type='range']:disabled::-webkit-slider-thumb {
+  background-color: #aaaaaa;
+  box-shadow: -200px 0 0 195px #c0c0c0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.file-upload {
+  display: block;
+  margin: 15px 0 15px;
+}
+
+.modal.visible {
+  display: block;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.modal-close {
+  color: #666;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
