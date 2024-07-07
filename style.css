@@ -55,7 +55,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 9px;
   border-radius: 100%;
   background: #33C3F0;
-  box-shadow: -200px 0 0 195px #43e5f7;
+  box-shadow: -1000px 0 0 995px #43e5f7;
 }
 
 input[type='range']:disabled {
@@ -69,7 +69,7 @@ input[type='range']:disabled::-webkit-slider-runnable-track {
 
 input[type='range']:disabled::-webkit-slider-thumb {
   background-color: #aaaaaa;
-  box-shadow: -200px 0 0 195px #c0c0c0;
+  box-shadow: -1000px 0 0 995px #c0c0c0;
 }
 
 .tooltip {
