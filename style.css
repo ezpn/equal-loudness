@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 #frequencies .button {
   font-size: xx-small;
   width: 35px;
@@ -145,8 +149,16 @@ input[type='range']:disabled::-webkit-slider-thumb {
   min-height: 300px;
 }
 
+.how-to-use .expandant {
+  display: none;
+  padding: 0 20px;
+}
+
 @media (min-width: 400px) {
   #chart-container {
     min-height: 400px;
+  }
+  .how-to-use .expandant {
+    display: block;
   }
 }

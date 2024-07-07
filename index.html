@@ -15,12 +15,10 @@
     <div class="row text-center">
       <h3>Loudness Equalizer</h3>
     </div>
+    <div class="row how-to-use"></div>
     <div class="row">
-      <p>Purpose of this tool is to observe how you perceive loudness of each frequency. Select one of the frequencies you'd like to listen to on frequency tiles. Click <i class="bx bx-play-circle bx-sm"></i> button below 1000 Hz frequency and listen to its loudness. Select <i class="bx bx-play-circle bx-sm"></i> below your chosen frequency and adjust Db Gain so that it matches loudness of 1000 Hz sound. Do that for each frequency. Baseline db gain is set to -35 dB, so be careful with your audio volume!</p>
-    </div>
-    <div class="row">
-      <div class="three columns">
-        <p class="tooltip">
+      <div class="four columns">
+        <span class="tooltip">
           <a href="#">
             <i class="bx bxs-keyboard"></i> Keyboard shortcuts
             <span class="tooltip-text">
@@ -33,14 +31,13 @@
               Right - Increase dB Gain <br />
             </span>
           </a>
-        </p>
+        </span>
       </div>
-      <div class="three columns">&nbsp;</div>
-      <div class="three columns">
+      <div class="four columns">
         <a id="export-button" href="#" onclick="app.actionExport(event)"><i class="bx bxs-cloud-download"></i> Export</a>
         <a id="download-hidden"></a>
       </div>
-      <div class="three columns">
+      <div class="four columns">
         <a id="import-button" href="#" onclick="app.actionImport(event)"><i class="bx bxs-cloud-upload"></i> Import</a>
       </div>
     </div>
