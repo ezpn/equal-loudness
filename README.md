@@ -1,8 +1,11 @@
 # Loudness Equalizer
 
-Purpose of this tool is to observe how you perceive loudness of each frequency. Select one of the frequencies you'd like to listen to on frequency tiles. 
+Purpose of this tool is to observe how you perceive loudness of each frequency.
+
+![alt text](EqualizerPreview.png "Preview of Loudness Equalizer")
 
 ### How to use?
+- Select one of the frequencies you'd like to listen to on frequency tiles.
 - Click **▶️** button below 1000 Hz frequency and listen to its loudness
 - Select **▶️** below your chosen frequency and adjust Db Gain so that it matches loudness of 1000 Hz sound.
 - Do that for each frequency
